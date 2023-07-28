@@ -33,7 +33,7 @@ def hf_model_weights_iterator(
     if not is_local:
         with lock:
             download_args = {
-                "model_name_or_path": model_name_or_path,
+                "repo_id": model_name_or_path,
                 "allow_patterns": "*.bin",
                 "cache_dir": cache_dir,
                 "tqdm_class": Disabledtqdm,
