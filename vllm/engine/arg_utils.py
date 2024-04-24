@@ -53,7 +53,7 @@ class EngineArgs:
     max_loras: int = 1
     max_lora_rank: int = 16
     lora_extra_vocab_size: int = 256
-    lora_dtype = 'auto'
+    lora_dtype: str = 'auto'
     max_cpu_loras: Optional[int] = None
     device: str = 'auto'
     ray_workers_use_nsight: bool = False
